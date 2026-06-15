@@ -14,6 +14,12 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Al Basha Grill authentic Mediterranean food in Stafford VA">
 <link rel="canonical" href="https://albashagrillva.com">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Al Basha Grill | Authentic Palestinian & Mediterranean Cuisine">
+<meta name="twitter:description" content="100% halal Mediterranean dining in Stafford, VA. Fresh shawarma, lamb chops, falafel, and family platters.">
+<meta name="twitter:image" content="https://images.pexels.com/photos/33746549/pexels-photo-33746549.jpeg?auto=compress&cs=tinysrgb&w=1200">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A7%86%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://api.fontshare.com">
 <link href="https://api.fontshare.com/v2/css?f[]=zodiak@400,500,600,700&f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {
@@ -58,7 +64,7 @@
   },
   "foundingDate": "2022",
   "hasMenu": "https://albashagrillva.com/#menu",
-  "acceptsReservations": "true",
+  "acceptsReservations": true,
   "paymentAccepted": "Cash, Credit Card, Apple Pay, Contactless Payments"
 }
 </script>
@@ -146,7 +152,7 @@ img{max-width:100%;height:auto;display:block}
 /* ===== ABOUT ===== */
 .about{padding:120px 0;position:relative}
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
-.about-img-wrap{position:relative}
+.about-img-wrap{position:relative;overflow:hidden}
 .about-img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:4px}
 .about-img-accent{position:absolute;bottom:-24px;right:-24px;width:200px;padding:24px;background:var(--gold);border-radius:4px;text-align:center}
 .about-img-accent span{font-family:var(--font-heading);font-size:var(--text-3xl);font-weight:700;color:var(--bg-primary);display:block}
@@ -161,7 +167,7 @@ img{max-width:100%;height:auto;display:block}
 .dishes-header h2{margin-bottom:1rem}
 .dishes-header p{color:var(--text-secondary);max-width:560px;margin:0 auto}
 .dishes-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.dish-card{position:relative;border-radius:6px;overflow:hidden;aspect-ratio:1/1;cursor:pointer;group:true}
+.dish-card{position:relative;border-radius:6px;overflow:hidden;aspect-ratio:1/1;cursor:pointer}
 .dish-card img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease,filter .6s}
 .dish-card:hover img{transform:scale(1.08);filter:brightness(.7)}
 .dish-card-overlay{position:absolute;inset:0;background:linear-gradient(0deg,rgba(10,10,10,.9) 0%,transparent 60%);display:flex;flex-direction:column;justify-content:flex-end;padding:28px;transition:all .4s}
@@ -755,7 +761,7 @@ img{max-width:100%;height:auto;display:block}
     <div class="reviews-header fade-up">
       <span class="section-label">Customer Reviews</span>
       <div class="reviews-rating">
-        <div class="reviews-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="reviews-stars" aria-label="4.4 out of 5 stars" role="img">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <span class="reviews-score">4.4</span>
       </div>
       <h2>What Our Guests Are Saying</h2>
@@ -763,7 +769,7 @@ img{max-width:100%;height:auto;display:block}
     </div>
     <div class="reviews-carousel">
       <div class="review-card fade-up">
-        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="review-stars" aria-label="5 out of 5 stars" role="img">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p class="review-text">"Excellent food, and very convenient to I-95 if you are looking for something quick. Clean parking lot and restaurant. The portions are generous and every bite is packed with authentic flavor."</p>
         <div class="review-author">
           <div class="review-avatar">PS</div>
@@ -771,7 +777,7 @@ img{max-width:100%;height:auto;display:block}
         </div>
       </div>
       <div class="review-card fade-up fade-up-delay-1">
-        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="review-stars" aria-label="5 out of 5 stars" role="img">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p class="review-text">"Amazing experience! Friendly customer service, very clean. They have vegetarian options! The falafel was perfectly crispy and the hummus was incredibly smooth. Will definitely be back."</p>
         <div class="review-author">
           <div class="review-avatar">NA</div>
@@ -779,7 +785,7 @@ img{max-width:100%;height:auto;display:block}
         </div>
       </div>
       <div class="review-card fade-up fade-up-delay-2">
-        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="review-stars" aria-label="5 out of 5 stars" role="img">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p class="review-text">"Best customer service in the area. Super friendly and accommodating staff. The chicken shawarma sandwich and garlic sauce are a must. The mixed grill for 4 easily serves 6 people!"</p>
         <div class="review-author">
           <div class="review-avatar">MR</div>
@@ -836,9 +842,9 @@ img{max-width:100%;height:auto;display:block}
         <p>Fast delivery</p>
       </a>
       <a href="https://order.online/store/24041500" target="_blank" class="order-card fade-up fade-up-delay-1">
-        <div class="order-card-icon"><svg viewBox="0 0 24 24"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/></svg></div>
-        <h4>Uber Eats</h4>
-        <p>Order now</p>
+        <div class="order-card-icon"><svg viewBox="0 0 24 24"><path d="M11 9H9V2H7v7H5V2H3v7c0 2.12 1.66 3.84 3.75 3.97V22h2.5v-9.03C11.34 12.84 13 11.12 13 9V2h-2v7zm5-3v8h2.5v8H21V2c-2.76 0-5 2.24-5 4z"/></svg></div>
+        <h4>Order Direct</h4>
+        <p>No fees</p>
       </a>
       <a href="https://www.grubhub.com/restaurant/al-basha-grill-1475-stafford-market-pl-stafford/4449216" target="_blank" class="order-card fade-up fade-up-delay-2">
         <div class="order-card-icon"><svg viewBox="0 0 24 24"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/></svg></div>
@@ -947,27 +953,27 @@ img{max-width:100%;height:auto;display:block}
     </div>
     <div class="faq-list">
       <div class="faq-item fade-up">
-        <button class="faq-question">Is all your food halal?<span class="faq-icon" aria-hidden="true"></span></button>
+        <button class="faq-question" aria-expanded="false">Is all your food halal?<span class="faq-icon" aria-hidden="true"></span></button>
         <div class="faq-answer"><p>Yes. 100% of our food is halal-certified. Our entire kitchen operates under strict halal guidelines, and no alcohol is served on the premises. We maintain a HalalRank score of 83.</p></div>
       </div>
       <div class="faq-item fade-up">
-        <button class="faq-question">Do you offer vegetarian or vegan options?<span class="faq-icon" aria-hidden="true"></span></button>
+        <button class="faq-question" aria-expanded="false">Do you offer vegetarian or vegan options?<span class="faq-icon" aria-hidden="true"></span></button>
         <div class="faq-answer"><p>Absolutely. We have a wide variety of vegetarian and vegan dishes including falafel, hummus, baba ghannouj, tabouleh, fattoush salad, grape leaves, and our vegetarian sampler platter.</p></div>
       </div>
       <div class="faq-item fade-up">
-        <button class="faq-question">Do you offer catering services?<span class="faq-icon" aria-hidden="true"></span></button>
+        <button class="faq-question" aria-expanded="false">Do you offer catering services?<span class="faq-icon" aria-hidden="true"></span></button>
         <div class="faq-answer"><p>Yes, we cater events of all sizes, from corporate lunches to large celebrations. We offer custom menus to fit your budget and dietary needs. Call us at (540) 699-2911 to discuss your event.</p></div>
       </div>
       <div class="faq-item fade-up">
-        <button class="faq-question">What delivery platforms do you use?<span class="faq-icon" aria-hidden="true"></span></button>
+        <button class="faq-question" aria-expanded="false">What delivery platforms do you use?<span class="faq-icon" aria-hidden="true"></span></button>
         <div class="faq-answer"><p>We're available on DoorDash, Uber Eats, GrubHub, and ChowNow. You can also call us directly for pickup orders at (540) 699-2911.</p></div>
       </div>
       <div class="faq-item fade-up">
-        <button class="faq-question">Is there parking available?<span class="faq-icon" aria-hidden="true"></span></button>
+        <button class="faq-question" aria-expanded="false">Is there parking available?<span class="faq-icon" aria-hidden="true"></span></button>
         <div class="faq-answer"><p>Yes, we have a large free parking lot in Stafford Marketplace. The restaurant is conveniently located right off Garrisonville Road, just minutes from I-95.</p></div>
       </div>
       <div class="faq-item fade-up">
-        <button class="faq-question">Do you accept reservations for large groups?<span class="faq-icon" aria-hidden="true"></span></button>
+        <button class="faq-question" aria-expanded="false">Do you accept reservations for large groups?<span class="faq-icon" aria-hidden="true"></span></button>
         <div class="faq-answer"><p>Yes, we welcome large groups and can accommodate parties. Please call ahead at (540) 699-2911 so we can prepare the best seating arrangement for your group.</p></div>
       </div>
     </div>
@@ -980,19 +986,19 @@ img{max-width:100%;height:auto;display:block}
     <div class="instagram-header fade-up">
       <span class="section-label">Follow Us</span>
       <h2>@albashastafford</h2>
-      <p style="color:var(--text-secondary)">7,600+ followers enjoying our daily food posts</p>
+      <p style="color:var(--text-secondary)">Follow us for daily food posts and behind-the-scenes content</p>
       <a href="https://www.instagram.com/albashastafford/" target="_blank" class="instagram-follow">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="var(--gold)"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
         Follow on Instagram
       </a>
     </div>
     <div class="instagram-grid">
-      <div class="instagram-item"><img src="https://images.pexels.com/photos/5779423/pexels-photo-5779423.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Instagram post" loading="lazy"><div class="instagram-item-overlay"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069z"/></svg></div></div>
-      <div class="instagram-item"><img src="https://images.pexels.com/photos/11795607/pexels-photo-11795607.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Instagram post" loading="lazy"><div class="instagram-item-overlay"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069z"/></svg></div></div>
-      <div class="instagram-item"><img src="https://images.pexels.com/photos/6419594/pexels-photo-6419594.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Instagram post" loading="lazy"><div class="instagram-item-overlay"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069z"/></svg></div></div>
-      <div class="instagram-item"><img src="https://images.pexels.com/photos/20183046/pexels-photo-20183046.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Instagram post" loading="lazy"><div class="instagram-item-overlay"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069z"/></svg></div></div>
-      <div class="instagram-item"><img src="https://images.pexels.com/photos/28897047/pexels-photo-28897047.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Instagram post" loading="lazy"><div class="instagram-item-overlay"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069z"/></svg></div></div>
-      <div class="instagram-item"><img src="https://images.pexels.com/photos/13304044/pexels-photo-13304044.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Instagram post" loading="lazy"><div class="instagram-item-overlay"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069z"/></svg></div></div>
+      <a href="https://www.instagram.com/albashastafford/" target="_blank" class="instagram-item"><img src="https://images.pexels.com/photos/5779423/pexels-photo-5779423.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Instagram post" loading="lazy"><div class="instagram-item-overlay"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069z"/></svg></div></a>
+      <a href="https://www.instagram.com/albashastafford/" target="_blank" class="instagram-item"><img src="https://images.pexels.com/photos/11795607/pexels-photo-11795607.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Instagram post" loading="lazy"><div class="instagram-item-overlay"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069z"/></svg></div></a>
+      <a href="https://www.instagram.com/albashastafford/" target="_blank" class="instagram-item"><img src="https://images.pexels.com/photos/6419594/pexels-photo-6419594.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Instagram post" loading="lazy"><div class="instagram-item-overlay"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069z"/></svg></div></a>
+      <a href="https://www.instagram.com/albashastafford/" target="_blank" class="instagram-item"><img src="https://images.pexels.com/photos/20183046/pexels-photo-20183046.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Instagram post" loading="lazy"><div class="instagram-item-overlay"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069z"/></svg></div></a>
+      <a href="https://www.instagram.com/albashastafford/" target="_blank" class="instagram-item"><img src="https://images.pexels.com/photos/28897047/pexels-photo-28897047.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Instagram post" loading="lazy"><div class="instagram-item-overlay"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069z"/></svg></div></a>
+      <a href="https://www.instagram.com/albashastafford/" target="_blank" class="instagram-item"><img src="https://images.pexels.com/photos/13304044/pexels-photo-13304044.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Instagram post" loading="lazy"><div class="instagram-item-overlay"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069z"/></svg></div></a>
     </div>
   </div>
 </section>
@@ -1108,13 +1114,13 @@ img{max-width:100%;height:auto;display:block}
 </div>
 
 <!-- ===== POPUP: WELCOME ===== -->
-<div class="popup-overlay" id="popupWelcome">
+<div class="popup-overlay" id="popupWelcome" role="dialog" aria-modal="true" aria-label="Welcome offer">
   <div class="popup">
     <button class="popup-close" onclick="closePopup('popupWelcome')">&times;</button>
     <div class="popup-discount">10% OFF</div>
     <h3>Welcome to Al Basha</h3>
     <p>Get 10% off your first online order. Enter your email below to claim your discount code.</p>
-    <form class="popup-form" onsubmit="event.preventDefault();this.innerHTML='<p style=color:var(--gold);font-weight:600>Code: WELCOME10<br>Use at checkout!</p>';setTimeout(()=>closePopup(\'popupWelcome\'),3000)">
+    <form class="popup-form" onsubmit="event.preventDefault();this.innerHTML='<p style=color:var(--gold);font-weight:600>Code: WELCOME10<br>Use at checkout!</p>';setTimeout(()=>closePopup('popupWelcome'),3000)">
       <input type="email" class="popup-input" placeholder="Your email address" required>
       <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">Claim My 10% Off</button>
     </form>
@@ -1123,7 +1129,7 @@ img{max-width:100%;height:auto;display:block}
 </div>
 
 <!-- ===== POPUP: EXIT INTENT ===== -->
-<div class="popup-overlay" id="popupExit">
+<div class="popup-overlay" id="popupExit" role="dialog" aria-modal="true" aria-label="Special offer">
   <div class="popup">
     <button class="popup-close" onclick="closePopup('popupExit')">&times;</button>
     <div class="popup-discount">FREE</div>
@@ -1135,7 +1141,7 @@ img{max-width:100%;height:auto;display:block}
 </div>
 
 <!-- ===== POPUP: CATERING SCROLL ===== -->
-<div class="popup-overlay" id="popupCatering">
+<div class="popup-overlay" id="popupCatering" role="dialog" aria-modal="true" aria-label="Catering special">
   <div class="popup">
     <button class="popup-close" onclick="closePopup('popupCatering')">&times;</button>
     <span class="section-label" style="margin-bottom:16px">Catering Special</span>
@@ -1198,10 +1204,12 @@ document.querySelectorAll('.faq-question').forEach(q => {
     document.querySelectorAll('.faq-item').forEach(i => {
       i.classList.remove('open');
       i.querySelector('.faq-answer').style.maxHeight = null;
+      i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
     });
     if (!isOpen) {
       item.classList.add('open');
       answer.style.maxHeight = answer.scrollHeight + 'px';
+      q.setAttribute('aria-expanded', 'true');
     }
   });
 });
@@ -1243,8 +1251,10 @@ document.querySelectorAll('.hours-row').forEach(row => {
 // === SMOOTH SCROLL ===
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function(e) {
+    const href = this.getAttribute('href');
+    if (href === '#') return;
     e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
+    const target = document.querySelector(href);
     if (target) {
       target.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
