@@ -339,6 +339,7 @@ img{max-width:100%;height:auto;display:block}
 .newsletter-input{flex:1;padding:14px 20px;background:var(--bg-card);border:1px solid rgba(255,255,255,.1);border-radius:4px;color:var(--text-primary);font-family:var(--font-body);font-size:var(--text-base);outline:none;transition:border-color .3s}
 .newsletter-input::placeholder{color:var(--text-muted)}
 .newsletter-input:focus{border-color:var(--gold)}
+.newsletter-input:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 
 /* ===== FOOTER ===== */
 .footer{padding:80px 0 0;background:var(--bg-primary);border-top:1px solid rgba(255,255,255,.06)}
@@ -379,6 +380,7 @@ img{max-width:100%;height:auto;display:block}
 .popup-form{display:flex;flex-direction:column;gap:12px}
 .popup-input{padding:14px 20px;background:var(--bg-card);border:1px solid rgba(255,255,255,.1);border-radius:4px;color:var(--text-primary);font-family:var(--font-body);font-size:var(--text-base);outline:none}
 .popup-input:focus{border-color:var(--gold)}
+.popup-input:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 .popup-discount{font-family:var(--font-heading);font-size:var(--text-4xl);color:var(--gold);margin-bottom:8px}
 .popup-small{font-size:var(--text-xs);color:var(--text-muted);margin-top:12px}
 
@@ -469,6 +471,7 @@ img{max-width:100%;height:auto;display:block}
 </nav>
 
 <!-- ===== HERO ===== -->
+<main>
 <section class="hero">
   <video class="hero-video" autoplay muted loop playsinline poster="https://images.pexels.com/photos/5528186/pexels-photo-5528186.jpeg?auto=compress&cs=tinysrgb&w=1920">
     <source src="https://videos.pexels.com/video-files/5528186/5528186-hd_1920_1080_25fps.mp4" type="video/mp4">
@@ -607,18 +610,18 @@ img{max-width:100%;height:auto;display:block}
       <span class="section-label">Our Menu</span>
       <h2>Fresh, Authentic, Always Halal</h2>
     </div>
-    <div class="menu-tabs fade-up">
-      <button class="menu-tab active" data-tab="appetizers">Appetizers</button>
-      <button class="menu-tab" data-tab="platters">Platters</button>
-      <button class="menu-tab" data-tab="wraps">Wraps & Sandwiches</button>
-      <button class="menu-tab" data-tab="salads">Salads</button>
-      <button class="menu-tab" data-tab="meals">Meals</button>
-      <button class="menu-tab" data-tab="family">Family Platters</button>
-      <button class="menu-tab" data-tab="pies">Pies & Fattyer</button>
-      <button class="menu-tab" data-tab="desserts">Desserts & Drinks</button>
+    <div class="menu-tabs fade-up" role="tablist" aria-label="Menu categories">
+      <button class="menu-tab active" data-tab="appetizers" role="tab" aria-selected="true" aria-controls="cat-appetizers">Appetizers</button>
+      <button class="menu-tab" data-tab="platters" role="tab" aria-selected="false" aria-controls="cat-platters">Platters</button>
+      <button class="menu-tab" data-tab="wraps" role="tab" aria-selected="false" aria-controls="cat-wraps">Wraps & Sandwiches</button>
+      <button class="menu-tab" data-tab="salads" role="tab" aria-selected="false" aria-controls="cat-salads">Salads</button>
+      <button class="menu-tab" data-tab="meals" role="tab" aria-selected="false" aria-controls="cat-meals">Meals</button>
+      <button class="menu-tab" data-tab="family" role="tab" aria-selected="false" aria-controls="cat-family">Family Platters</button>
+      <button class="menu-tab" data-tab="pies" role="tab" aria-selected="false" aria-controls="cat-pies">Pies & Fattyer</button>
+      <button class="menu-tab" data-tab="desserts" role="tab" aria-selected="false" aria-controls="cat-desserts">Desserts & Drinks</button>
     </div>
 
-    <div class="menu-category active" data-category="appetizers">
+    <div class="menu-category active" data-category="appetizers" id="cat-appetizers" role="tabpanel">
       <div class="menu-grid">
         <div class="menu-item"><div class="menu-item-info"><h4>Hummus</h4><p>Creamy chickpea dip with tahini, olive oil, and warm pita</p></div></div>
         <div class="menu-item"><div class="menu-item-info"><h4>Baba Ghannouj</h4><p>Smoky roasted eggplant blended with tahini and lemon</p></div></div>
@@ -633,7 +636,7 @@ img{max-width:100%;height:auto;display:block}
       </div>
     </div>
 
-    <div class="menu-category" data-category="platters">
+    <div class="menu-category" data-category="platters" id="cat-platters" role="tabpanel">
       <div class="menu-grid">
         <div class="menu-item"><div class="menu-item-info"><h4>Chicken Shawarma Platter</h4><p>Slow-roasted chicken with rice, salad, hummus, and pita</p></div></div>
         <div class="menu-item"><div class="menu-item-info"><h4>Beef Shawarma Platter</h4><p>Thinly sliced seasoned beef with rice, salad, and sides</p></div></div>
@@ -648,7 +651,7 @@ img{max-width:100%;height:auto;display:block}
       </div>
     </div>
 
-    <div class="menu-category" data-category="wraps">
+    <div class="menu-category" data-category="wraps" id="cat-wraps" role="tabpanel">
       <div class="menu-grid">
         <div class="menu-item"><div class="menu-item-info"><h4>Chicken Shawarma Wrap</h4><p>Sliced chicken shawarma with garlic sauce, pickles, and fries in warm pita</p></div></div>
         <div class="menu-item"><div class="menu-item-info"><h4>Beef Shawarma Wrap</h4><p>Seasoned beef shawarma with tahini, pickles, and fresh veggies</p></div></div>
@@ -658,7 +661,7 @@ img{max-width:100%;height:auto;display:block}
       </div>
     </div>
 
-    <div class="menu-category" data-category="salads">
+    <div class="menu-category" data-category="salads" id="cat-salads" role="tabpanel">
       <div class="menu-grid">
         <div class="menu-item"><div class="menu-item-info"><h4>Tabouleh</h4><p>Fresh parsley, bulgur, tomato, and lemon-olive oil dressing</p></div></div>
         <div class="menu-item"><div class="menu-item-info"><h4>Fattoush</h4><p>Mixed greens, crispy pita chips, sumac, and pomegranate dressing</p></div></div>
@@ -667,7 +670,7 @@ img{max-width:100%;height:auto;display:block}
       </div>
     </div>
 
-    <div class="menu-category" data-category="meals">
+    <div class="menu-category" data-category="meals" id="cat-meals" role="tabpanel">
       <div class="menu-grid">
         <div class="menu-item"><div class="menu-item-info"><h4>Shawarma Meal</h4><p>Choice of chicken or beef shawarma with fries and a drink</p></div></div>
         <div class="menu-item"><div class="menu-item-info"><h4>Gyro Meal</h4><p>Gyro sandwich with seasoned fries and a drink</p></div></div>
@@ -676,21 +679,21 @@ img{max-width:100%;height:auto;display:block}
       </div>
     </div>
 
-    <div class="menu-category" data-category="family">
+    <div class="menu-category" data-category="family" id="cat-family" role="tabpanel">
       <div class="menu-grid">
         <div class="menu-item"><div class="menu-item-info"><h4>Family Platter</h4><p>Generous platter of mixed skewers, shawarma, rice, hummus, salad, and pita. Serves 4-6 people.</p></div></div>
         <div class="menu-item"><div class="menu-item-info"><h4>Al-Basha Family Feast</h4><p>Our complete spread with appetizers, mixed grill, sides, and dessert. Perfect for gatherings.</p></div></div>
       </div>
     </div>
 
-    <div class="menu-category" data-category="pies">
+    <div class="menu-category" data-category="pies" id="cat-pies" role="tabpanel">
       <div class="menu-grid">
         <div class="menu-item"><div class="menu-item-info"><h4>Meat Pie</h4><p>Flaky pastry filled with seasoned ground beef and onions</p></div></div>
         <div class="menu-item"><div class="menu-item-info"><h4>Spinach Sambusa</h4><p>Crispy triangular pastry filled with spinach, onions, and sumac</p></div></div>
       </div>
     </div>
 
-    <div class="menu-category" data-category="desserts">
+    <div class="menu-category" data-category="desserts" id="cat-desserts" role="tabpanel">
       <div class="menu-grid">
         <div class="menu-item"><div class="menu-item-info"><h4>Kunafa</h4><p>Warm shredded phyllo with sweet cheese, rose water syrup</p></div></div>
         <div class="menu-item"><div class="menu-item-info"><h4>Baklava</h4><p>Layered phyllo with pistachios and honey syrup</p></div></div>
@@ -1098,6 +1101,7 @@ img{max-width:100%;height:auto;display:block}
     </div>
   </div>
 </footer>
+</main>
 
 <!-- ===== MOBILE STICKY BAR ===== -->
 <div class="mobile-bar">
@@ -1188,9 +1192,13 @@ navLinks.querySelectorAll('a').forEach(link => {
 // === MENU TABS ===
 document.querySelectorAll('.menu-tab').forEach(tab => {
   tab.addEventListener('click', () => {
-    document.querySelectorAll('.menu-tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.menu-tab').forEach(t => {
+      t.classList.remove('active');
+      t.setAttribute('aria-selected', 'false');
+    });
     document.querySelectorAll('.menu-category').forEach(c => c.classList.remove('active'));
     tab.classList.add('active');
+    tab.setAttribute('aria-selected', 'true');
     document.querySelector(`[data-category="${tab.dataset.tab}"]`).classList.add('active');
   });
 });
